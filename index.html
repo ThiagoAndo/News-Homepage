@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  
+
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
 </head>
+
 <body>
-  <nav class ="myNavy">
+  <nav class="myNavy">
     <div class="oppacity"></div>
-    <div class= "brand-title"><img src="./assets/images/logo.svg" alt=""></div>
-  
+    <div class="brand-title"><img src="./assets/images/logo.svg" alt=""></div>
+
     <div class="navbar-links display_none">
-       <ul class="navbar-body"> 
+      <ul class="navbar-body">
         <li class="active mobVer"><a href="#" class="active">Home</a></li>
         <li><a href="#">New</a></li>
         <li><a href="#">Popular</a></li>
@@ -29,7 +32,7 @@
       </ul>
       <div class="tab-highlighter"></div>
     </div>
-  
+
     <div class="menu-wrap smOnly">
       <div class="menu">
         <div class="icon-list">
@@ -41,24 +44,24 @@
         <button class="close-button" id="close-button">X</button>
       </div>
     </div>
-    
+
     <button class="smOnly menu-button fa fa-bars" id="open-button">
     </button>
   </nav>
   <main>
     <section id="firstContainer">
       <div class="holdImg">
-        <img class="changeImg" src="./assets/images/image-web-3-desktop.jpg" alt="">  
+        <img class="changeImg" src="./assets/images/image-web-3-desktop.jpg" alt="">
       </div>
       <!-- Articles -->
       <div class="holdArticles">
-        <div id="article1" class= "bordSolid">
+        <div id="article1" class="bordSolid">
           <p class="weight800">New</p>
-          <p  class="weight700">Hydrogen VS Electric Cars</p>
+          <p class="weight700">Hydrogen VS Electric Cars</p>
           <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
         </div>
         <div id="article2" class="bordSolid">
-          <p class="weight700 midTxt">HThe Downsides of AI Artistry</p>
+          <p class="weight700 midTxt">The Downsides of AI Artistry</p>
           <p>What are the possible adverse effects of <br class="lgOnly"> on-demand AI image generation?</p>
         </div>
         <div id="article3">
@@ -71,61 +74,63 @@
         <p class="hypertext"> The Bright Future of <br class="lgOnly"> Web 3.0?</p>
       </div>
 
-     <!-- Hold Button -->
+      <!-- Hold Button -->
       <div class="holdBtn">
-        <p> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-        But is it really fulfilling its promise?</p>
-        <button id = "button" class="animated_button">READ MORE</button>
+        <p> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands
+          of the people.
+          But is it really fulfilling its promise?</p>
+        <button id="button" class="animated_button">READ MORE</button>
       </div>
 
 
       <!-- Tails -->
       <div class="tail1">
         <div class="tailImg">
-        <img class="imgTail" src="./assets/images/image-retro-pcs.jpg" alt="Retro Pcs">
-      </div>
+          <img class="imgTail" src="./assets/images/image-retro-pcs.jpg" alt="Retro Pcs">
+        </div>
         <div class="tailText">
-         <p class="tailNum">01</p>
-         <p class="tailLink">Reviving Retro PCs</p>
-         <p>What happens when old PCs are given modern upgrades?</p>
-       </div>
+          <p class="tailNum">01</p>
+          <p class="tailLink">Reviving Retro PCs</p>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
       </div>
-      <div class="tail2">
-        <div class="tailImg">
-        <img class="imgTail" src="./assets/images/image-top-laptops.jpg" alt="Laptops">
-      </div>
-        <div class="tailText">
-         <p class="tailNum">02</p>
-         <p class="tailLink">Top 10 Laptops of 2022</p>
-         <p>Our best picks for various needs and budgets.</p>
-       </div>
-      </div><div class="tail3">
-        <div class="tailImg">
-        <img class="imgTail" src="./assets/images/image-gaming-growth.jpg" alt="Gaming">
-      </div>
-        <div class="tailText">
-         <p class="tailNum">01</p>
-         <p class="tailLink">The Growth of Gaming</p>
-         <p>How the pandemic has sparked fresh opportunities.</p>
-       </div>
-      </div>
-      
-     
-  
+        <div class="tail2">
+          <div class="tailImg">
+            <img class="imgTail" src="./assets/images/image-top-laptops.jpg" alt="Laptops">
+          </div>
+          <div class="tailText">
+            <p class="tailNum">02</p>
+            <p class="tailLink">Top 10 Laptops of 2022</p>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+          <div class="tail3">
+            <div class="tailImg">
+              <img class="imgTail" src="./assets/images/image-gaming-growth.jpg" alt="Gaming">
+            </div>
+            <div class="tailText">
+              <p class="tailNum">03</p>
+              <p class="tailLink">The Growth of Gaming</p>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+
+
+
         <div class="attribution">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a href="https://github.com/ThiagoAndo" target="_blank">Thiago Ando de Freitas</a>.
+          Challenge by &#160<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by &#160<a href="https://github.com/ThiagoAndo" target="_blank">Thiago Ando de Freitas</a>.
         </div>
     </section>
-   
+
 
     </div>
   </main>
 
 
-
-<script src="https://kit.fontawesome.com/eccfdf62a7.js" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>   
-<script src="./js/script.js"></script>
+  <script src="https://kit.fontawesome.com/eccfdf62a7.js" crossorigin="anonymous"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>

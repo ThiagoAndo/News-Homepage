@@ -9,12 +9,12 @@ html {
 }
 
 body {
-  width: 85%;
+  width: 82%;
   margin: auto;
   height: 600px;
   font-family: "Inter", sans-serif;
   font-size: 15px;
-  color: hsl(228, 5%, 63%);
+  color: hsl(236, 13%, 42%);
   font-weight: 400;
 }
 
@@ -100,24 +100,10 @@ body {
   align-items: center;
 }
 
-.button-bar {
-  height: 30px;
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-}
-
-.button-bar .bar {
-  height: 3px;
-  width: 100%;
-  background-color: black;
-  border-radius: 10px;
-  margin: auto;
-}
-
 .smOnly {
   display: none;
 }
+
 nav > .smOnly {
   display: none;
 }
@@ -222,11 +208,11 @@ nav > .smOnly {
 
 #firstContainer {
   height: 1000px;
-  margin-top: 75px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.25fr 0.25fr 0.25fr 0.55fr;
-  /* grid-template-rows: 250px 250px 175px 150px; */
+  /* grid-template-rows: 300px 300px 200px 200px; */
+  grid-template-rows: 300px 200px 350px 50px;
 }
 
 /* ==========Main picture======================== */
@@ -312,7 +298,8 @@ nav > .smOnly {
 .holdBtn {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  justify-content: space-between;
+  margin-top: 8px;
   margin-right: 8px;
 }
 
@@ -321,6 +308,8 @@ nav > .smOnly {
 }
 
 #button {
+  display: flex;
+  align-items: center;
   color: #111010;
   background: transparent;
   text-decoration: none;
@@ -336,7 +325,6 @@ nav > .smOnly {
   position: relative;
   overflow: hidden;
   z-index: 100;
-  margin-bottom: 25px;
   animation-name: example;
   animation-duration: 4s;
 }
@@ -372,7 +360,7 @@ nav > .smOnly {
 
 /* ========== End of Hold Button======================== */
 
-/* ========== End of Hold Button======================== */
+/* ==========Staryt of First container======================== */
 
 .tail1,
 .tail2,
@@ -543,44 +531,115 @@ nav > .smOnly {
   .attribution {
     grid-area: 8 / 1 / 9 / 2;
   }
+  .tail1 {
+    margin-left: 8px;
+  }
 
   .tail1,
   .tail2,
   .tail3 {
-    padding-top: 0px;
-    width: 100%;
-    margin-top: 100px;
-    margin-right: 0px;
-    margin-left: 0px;
+    display: block;
   }
-  .tail1,
-  .tail2,
-  .tail3,
+
   .tailImg {
-    width: 370px;
-    height: 150px;
+    float: left;
+    width: 40%;
+    height: 200px;
   }
 
   .imgTail {
-    height: 110%;
-    width: 150px;
-  }
-  .tailText {
-    display: block;
-    margin: 0px;
+    width: 100%;
+    height: 100%;
   }
 
+  .tailText {
+    float: right;
+    width: 40%;
+    height: 200px;
+    margin-right: 25px;
+  }
+  .tailLink {
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+
+  .tailText p:last-of-type {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
   /* End of firstContainer  ================================================*/
 }
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 477px) and (max-width: 900px) {
   body {
     width: 95%;
+    font-size: 12px;
   }
 
   .navbar-links li a {
     font-size: 0.85rem;
     margin-right: 3px;
     color: hsl(233, 8%, 79%);
+  }
+  #firstContainer {
+    margin-top: 30px;
+    grid-template-rows: 300px 250px 200px 50px;
+  }
+
+  .weight700 {
+    font-size: 1rem;
+  }
+  .weight800 {
+    font-size: 1.5rem;
+  }
+
+  .bigText {
+    margin-top: 50px;
+    display: block;
+  }
+  .hypertext {
+    margin: 0;
+    font-size: 2rem;
+  }
+  .holdBtn {
+    margin-top: 50px;
+  }
+
+  .holdBtn p {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  .tail1,
+  .tail2,
+  .tail3 {
+    margin: 0px;
+    padding-bottom: 0px;
+  }
+  .tail3 {
+    margin-left: 8px;
+  }
+  .tailText {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .tailText p {
+    margin: 0;
+  }
+
+  .tailNum {
+    font-size: 1.3rem;
+  }
+
+  .tailLink {
+    font-size: 1rem;
+  }
+
+  #button {
+    font-size: 0.8rem;
+    display: block;
+    width: 120px;
+    padding: 14px;
   }
 }

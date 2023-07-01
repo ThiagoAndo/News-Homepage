@@ -257,6 +257,6 @@ Completing this project made me realize I need to improve my JS skills. This lan
 ## Author
 
 - Website - [Thiago Ando de Freitas](https://thiagoando.github.io/Portfolio/)
-- Frontend Mentor - [Thiago de Fritas](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [Thiago de Freitas](https://www.frontendmentor.io/profile/yourusername)
 
 
